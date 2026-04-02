@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notices & Important Updates – Freedom Park Preschool & Nursery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .notice-grid { max-width: 900px; margin: 0 auto; }
+    .notice-card {
+      background: var(--card-bg);
+      border-left: 6px solid var(--orange);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 32px;
+      align-items: start;
+    }
+    .notice-main { }
+    .notice-img-large {
+      width: 100%; height: 220px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+    }
+    .notice-date {
+      background: linear-gradient(135deg, var(--sky), var(--purple));
+      color: var(--white);
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    .notice-title {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--orange);
+      margin-bottom: 12px;
+    }
+    @media (max-width: 768px) {
+      .notice-card { grid-template-columns: 1fr; gap: 24px; }
+      .notice-img-large { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div id="notice-placeholder"></div>
+
+<div class="page-header" style="background: linear-gradient(135deg, var(--orange), var(--yellow));">
+  <h1>📢 Important Notices</h1>
+  <p>Latest updates, announcements and important information for parents</p>
+  <div class="breadcrumb"><a href="index.html">Home</a> › Notices</div>
+</div>
+
+<section class="section">
+  <div class="notice-grid">
+    
+    <!-- Summer Camp Notice -->
+    <article class="notice-card animate-up">
+      <div class="notice-main">
+        <div class="notice-date">📣 Latest Update</div>
+        <h2 class="notice-title">Summer Camp Registrations Open!</h2>
+        <p><strong>Dear Parents,</strong></p>
+        <p>Exciting news! We are super happy to announce our <strong>Summer Camp</strong> dates — open to all children!</p>
+        <ul style="color: var(--text); font-size: 1rem; margin: 20px 0;">
+          <li>🎨 <strong>Fees:</strong> ₹1600 per batch | Both batches: ₹3000 (₹200 off)</li>
+          <li>⏰ <strong>Timing:</strong> 9:00 – 11:30 AM</li>
+          <li>📅 <strong>Activities:</strong> Art, Games, Stories, Fun Learning</li>
+        </ul>
+        <p><em>Help us spread the word! 😊 — Freedom Park Team</em></p>
+      </div>
+      <img src="images/SummerCamp.jpeg" alt="Summer Camp Activities" class="notice-img-large">
+    </article>
+
+  </div>
+  <div style="text-align: center; margin-top: 40px;">
+    <p style="color: var(--muted); font-style: italic;">Check back regularly for new updates! 📌</p>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

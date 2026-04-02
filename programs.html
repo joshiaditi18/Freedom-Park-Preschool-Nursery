@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs – Freedom Park Preschool & Nursery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .prog-card {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 28px;
+    }
+    .prog-stripe { width: 10px; }
+    .prog-body { padding: 32px 36px; }
+    .prog-header { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+    .prog-emoji { font-size: 3rem; }
+    .prog-title { font-family: var(--font-head); font-weight: 800; font-size: 1.4rem; }
+    .prog-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .prog-tag {
+      border-radius: 50px; padding: 4px 14px;
+      font-size: 0.82rem; font-weight: 700;
+      border: 1.5px solid;
+    }
+    .prog-photos { display: flex; gap: 12px; margin-top: 18px; flex-wrap: wrap; }
+    .prog-photo {
+      width: 140px; height: 100px;
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+      box-shadow: var(--shadow-sm);
+    }
+    @media(max-width:600px){
+      .prog-body { padding: 20px; }
+      .prog-photo { width: 100%; height: 160px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div id="notice-placeholder"></div>
+
+<div class="page-header">
+  <h1>Our Programs 📚</h1>
+  <p>Age-appropriate, joy-filled learning for every stage</p>
+  <div class="breadcrumb"><a href="index.html">Home</a> › Programs</div>
+</div>
+
+<section class="section animate-up">
+  <div class="divider"></div>
+  <h2 class="section-title">Learning <span>Journeys</span></h2>
+  <p class="section-sub">Each program is thoughtfully crafted to nurture your child's unique potential</p>
+
+  <div style="max-width:860px;margin:0 auto">
+
+    <!-- Playgroup -->
+    <div class="prog-card animate-up">
+      <div class="prog-stripe" style="background:linear-gradient(180deg,#FFD93D,#FFAB40)"></div>
+      <div class="prog-body">
+        <div class="prog-header">
+          <span class="prog-emoji">🍼</span>
+          <div>
+            <div class="prog-title">Playgroup</div>
+            <div class="program-age">2 – 3 years</div>
+          </div>
+        </div>
+        <p style="color:var(--muted)">Our youngest learners are introduced to a warm, caring environment through sensory play, music, rhymes and stories. The focus is on social bonding, basic motor skills and joyful exploration.</p>
+        <div class="prog-tags">
+          <span class="prog-tag" style="background:#FFF8DC;border-color:#FFD93D;color:#b8860b">🎵 Rhymes</span>
+          <span class="prog-tag" style="background:#FFF8DC;border-color:#FFD93D;color:#b8860b">🎨 Sensory Play</span>
+          <span class="prog-tag" style="background:#FFF8DC;border-color:#FFD93D;color:#b8860b">🐘 Stories</span>
+          <span class="prog-tag" style="background:#FFF8DC;border-color:#FFD93D;color:#b8860b">🤝 Social Skills</span>
+        </div>
+        <div class="prog-photos">
+          <img src="images/Playgrp monkey.jpeg" alt="Nursery class activity" class="prog-photo" />
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Nursery -->
+    <div class="prog-card animate-up">
+      <div class="prog-stripe" style="background:linear-gradient(180deg,#4FC3F7,#29B6F6)"></div>
+      <div class="prog-body">
+        <div class="prog-header">
+          <span class="prog-emoji">🌱</span>
+          <div>
+            <div class="prog-title">Nursery</div>
+            <div class="program-age">3 – 4 years</div>
+          </div>
+        </div>
+        <p style="color:var(--muted)">Children begin structured learning through colorful activities, early literacy, number awareness and creative arts. We focus on language development, curiosity and independence.</p>
+        <div class="prog-tags">
+          <span class="prog-tag" style="background:#E0F7FA;border-color:#4FC3F7;color:#0277bd">🔤 ABCs</span>
+          <span class="prog-tag" style="background:#E0F7FA;border-color:#4FC3F7;color:#0277bd">🔢 Numbers</span>
+          <span class="prog-tag" style="background:#E0F7FA;border-color:#4FC3F7;color:#0277bd">🎨 Craft</span>
+          <span class="prog-tag" style="background:#E0F7FA;border-color:#4FC3F7;color:#0277bd">🗣️ Language</span>
+        </div>
+        <div class="prog-photos">
+          <img src="images/IMG_20260227_113934_1.jpg.jpeg" alt="Nursery class activity" class="prog-photo" />
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Junior KG -->
+    <div class="prog-card animate-up">
+      <div class="prog-stripe" style="background:linear-gradient(180deg,#56C271,#26A69A)"></div>
+      <div class="prog-body">
+        <div class="prog-header">
+          <span class="prog-emoji">🌟</span>
+          <div>
+            <div class="prog-title">Junior KG</div>
+            <div class="program-age">4 – 5 years</div>
+          </div>
+        </div>
+        <p style="color:var(--muted)">Structured curriculum with phonics, writing practice, math concepts and science exploration. Children develop problem-solving skills and a love for learning through hands-on activities.</p>
+        <div class="prog-tags">
+          <span class="prog-tag" style="background:#E8F5E9;border-color:#56C271;color:#2e7d32">📝 Writing</span>
+          <span class="prog-tag" style="background:#E8F5E9;border-color:#56C271;color:#2e7d32">🔬 Science</span>
+          <span class="prog-tag" style="background:#E8F5E9;border-color:#56C271;color:#2e7d32">🧮 Maths</span>
+          <span class="prog-tag" style="background:#E8F5E9;border-color:#56C271;color:#2e7d32">🎭 Phonics</span>
+        </div>
+        <div class="prog-photos">
+          <img src="images/classroom1.jpeg" alt="Nursery class activity" class="prog-photo" />
+          <img src="images/classroom2.jpeg" alt="Children studying" class="prog-photo" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Senior KG -->
+    <div class="prog-card animate-up">
+      <div class="prog-stripe" style="background:linear-gradient(180deg,#FF8C42,#FF5252)"></div>
+      <div class="prog-body">
+        <div class="prog-header">
+          <span class="prog-emoji">🎓</span>
+          <div>
+            <div class="prog-title">Senior KG</div>
+            <div class="program-age">5 – 6 years</div>
+          </div>
+        </div>
+        <p style="color:var(--muted)">School-readiness program focusing on reading, writing, arithmetic and social confidence. Children are prepared to transition smoothly to primary school with strong foundational skills.</p>
+        <div class="prog-tags">
+          <span class="prog-tag" style="background:#FFF3E0;border-color:#FF8C42;color:#e65100">📖 Reading</span>
+          <span class="prog-tag" style="background:#FFF3E0;border-color:#FF8C42;color:#e65100">🎤 Confidence</span>
+          <span class="prog-tag" style="background:#FFF3E0;border-color:#FF8C42;color:#e65100">🏫 School Prep</span>
+          <span class="prog-tag" style="background:#FFF3E0;border-color:#FF8C42;color:#e65100">🌏 GK</span>
+        </div>
+        <div class="prog-photos">
+          <img src="images/sr kg print class photo new.jpg" alt="Nursery class activity" class="prog-photo" />
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- Daycare -->
+    <div class="prog-card animate-up">
+      <div class="prog-stripe" style="background:linear-gradient(180deg,#FF6B9D,#A78BFA)"></div>
+      <div class="prog-body">
+        <div class="prog-header">
+          <span class="prog-emoji">🏠</span>
+          <div>
+            <div class="prog-title">Daycare</div>
+            <div class="program-age">1.5 years &amp; above</div>
+          </div>
+        </div>
+        <p style="color:var(--muted)">A safe, nurturing second home for your child while you're at work. We provide healthy meals, nap time, supervised play and age-appropriate activities in a hygienic and loving environment.</p>
+        <div class="prog-tags">
+          
+          <span class="prog-tag" style="background:#FFF0F7;border-color:#FF6B9D;color:#ad1457">😴 Nap Time</span>
+          <span class="prog-tag" style="background:#FFF0F7;border-color:#FF6B9D;color:#ad1457">🛡️ Safe</span>
+          <span class="prog-tag" style="background:#FFF0F7;border-color:#FF6B9D;color:#ad1457">🎮 Activities</span>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:40px">
+    <a href="admissions.html" class="btn btn-primary">🎒 Enroll Your Child Today</a>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

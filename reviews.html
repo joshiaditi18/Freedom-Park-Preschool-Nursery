@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parent Reviews | Freedom Park Preschool – Wadmukhwadi, Pune</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div id="notice-placeholder"></div>
+<style>
+.video-container {
+  width: 50%;              /* reduced size, half the page width */
+  max-width: 480px;        /* cap the width for consistency */
+  margin: 0 auto;          /* center it */
+  border-radius: 6px;      /* subtle rounded corners */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* lighter shadow for formal look */
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.speaker-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+</style>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <h1>Parent <span>Reviews</span></h1>
+  <p>Hear what our families say about their Freedom Park experience ✨</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> → Reviews
+  </div>
+</section>
+
+
+
+<!-- VIDEO TESTIMONIAL -->
+<section class="section section-alt">
+  <div class="divider"></div>
+  <h2 class="section-title">Watch Our Happy Moments 🎥</h2>
+  <p class="section-sub">Real moments from Freedom Park classroom</p>
+  
+  <div class="video-container animate-up">
+    <video id="review-video" src="images/VID-20260401-WA0009.mp4" autoplay loop muted playsinline>
+      Your browser does not support the video tag.
+    </video>
+    <button class="speaker-btn" id="speaker-toggle" title="Toggle Sound">
+      🔇
+    </button>
+  </div>
+  
+  <div style="text-align:center;margin-top:40px">
+    
+    <a href="admissions.html" class="btn btn-primary">🎒 Join Our Happy Family</a>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

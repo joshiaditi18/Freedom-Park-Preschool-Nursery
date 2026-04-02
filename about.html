@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Freedom Park Preschool & Nursery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    @media (max-width:680px) {
+      .about-grid, .msg-grid, .info-cols { grid-template-columns: 1fr !important; }
+    }
+    .info-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 20px; }
+    .info-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex; flex-direction: column; gap: 8px;
+      transition: transform 0.2s;
+    }
+    .info-card:hover { transform: translateY(-5px); }
+    .info-card h4 { font-family: var(--font-head); font-weight: 800; font-size: 1rem; }
+    .info-card ul { padding-left: 18px; color: var(--muted); font-size: 0.9rem; line-height: 1.8; }
+    .list-pill {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 10px 0; border-bottom: 1px solid var(--border);
+      font-size: 0.92rem; color: var(--text);
+    }
+    .list-pill:last-child { border-bottom: none; }
+    .msg-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      box-shadow: var(--shadow-md);
+      position: relative; overflow: hidden;
+    }
+    .msg-card .quote-bg {
+      position:absolute; top:-20px; right:-20px;
+      width:100px; height:100px; border-radius:50%; opacity:0.08;
+    }
+    .timing-row {
+      display: flex; align-items: center; gap: 14px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    .timing-icon {
+      width: 48px; height: 48px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div id="notice-placeholder"></div>
+
+<div class="page-header">
+  <h1>About Us 💛</h1>
+  <p>Our story, values, vision &amp; mission</p>
+  <p style="margin-top:6px;font-style:italic;opacity:0.9">✨ new beginnings with your child</p>
+  <div class="breadcrumb"><a href="index.html">Home</a> › About</div>
+</div>
+
+<!-- ===== LEADERSHIP MESSAGES ===== -->
+<section class="section animate-up">
+  <div class="divider"></div>
+  <h2 class="section-title">Our <span>Leadership</span></h2>
+  <p class="section-sub">Words from the heart — for every parent and child in our family</p>
+
+  <div class="msg-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1040px;margin:0 auto;">
+
+    <!-- Principal's Message -->
+    <div class="msg-card animate-up">
+      <div class="quote-bg" style="background:linear-gradient(135deg,var(--sky),var(--purple))"></div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--sky),var(--purple));color:#fff;padding:6px 16px;border-radius:50px;font-family:var(--font-head);font-weight:700;font-size:0.82rem;margin-bottom:20px">👩‍💼 Principal's Message</div>
+      <div style="font-size:2.8rem;line-height:1;margin-bottom:12px;color:var(--sky)">❝</div>
+      <h3 style="font-family:var(--font-head);font-weight:800;font-size:1.15rem;margin-bottom:14px;color:var(--text)">Welcome to Freedom Park!</h3>
+      <p style="color:var(--text);line-height:1.85;font-size:0.96rem;margin-bottom:20px">
+        At Freedom Park Preschool &amp; Nursery, we place your child's happiness and development at the center of everything we do. Our programs are built to nurture creativity, curiosity, and confidence while ensuring that every child feels safe, respected, and joyful.
+      </p>
+      <p style="color:var(--text);line-height:1.85;font-size:0.96rem;">
+        We aim to partner closely with parents through open communication, regular updates, and shared goals for each child's growth.
+      </p>
+      <div style="display:flex;align-items:center;gap:14px;padding-top:20px;margin-top:20px;border-top:2px solid var(--border);">
+        <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--sky),var(--purple));display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;">👩‍💼</div>
+        <div>
+          <div style="font-family:var(--font-head);font-weight:800;font-size:1.05rem;color:var(--text)">Reema Sharma</div>
+          <div style="font-size:0.82rem;color:var(--sky);font-weight:700">Principal</div>
+          <div style="font-size:0.78rem;color:var(--muted)">Freedom Park Preschool &amp; Nursery</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Founder Message -->
+    <div class="msg-card animate-up">
+      <div class="quote-bg" style="background:linear-gradient(135deg,var(--orange),var(--yellow))"></div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--orange),var(--yellow));color:#fff;padding:6px 16px;border-radius:50px;font-family:var(--font-head);font-weight:700;font-size:0.82rem;margin-bottom:20px">👨‍🏫 Founder</div>
+      <div style="font-size:2.8rem;line-height:1;margin-bottom:12px;color:var(--orange)">❝</div>
+      <h3 style="font-family:var(--font-head);font-weight:800;font-size:1.15rem;margin-bottom:14px;color:var(--text)">Freedom Park Preschool &amp; Nursery</h3>
+      <p style="color:var(--text);line-height:1.85;font-size:0.96rem;margin-bottom:20px">
+        Freedom Park Preschool &amp; Nursery was founded by <strong>Deepak Lunavat</strong>, who leads the centre with dedication to nurturing young learners and offering families trusted preschool and daycare support.
+      </p>
+      <p style="color:var(--text);line-height:1.85;font-size:0.96rem;">
+        His commitment to quality early childhood care shapes the centre's philosophy and daily routines — rooted in Indian values, love and a belief that every child deserves the best possible start.
+      </p>
+      <div style="display:flex;align-items:center;gap:14px;padding-top:20px;margin-top:20px;border-top:2px solid var(--border);">
+        <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--yellow));display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;">👨‍🏫</div>
+        <div>
+          <div style="font-family:var(--font-head);font-weight:800;font-size:1.05rem;color:var(--text)">Deepak Lunavat</div>
+          <div style="font-size:0.82rem;color:var(--orange);font-weight:700">Founder</div>
+          <div style="font-size:0.78rem;color:var(--muted)">Freedom Park Preschool &amp; Nursery</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== VALUES + VISION + MISSION ===== -->
+<section class="section section-alt animate-up">
+  <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;">
+
+    <!-- Left: Values + History -->
+    <div>
+      <div class="divider" style="margin-left:0;text-align:left"></div>
+      <h2 class="section-title" style="text-align:left">Our Core <span>Values</span></h2>
+      <div class="values-grid" style="margin-bottom:28px">
+        <div class="value-card animate-up">
+          <div class="value-icon">💖</div>
+          <div><h4>Love &amp; Care</h4><p style="font-size:0.85rem;color:var(--muted)">Every child is loved unconditionally</p></div>
+        </div>
+        <div class="value-card animate-up">
+          <div class="value-icon">🛡️</div>
+          <div><h4>Safety First</h4><p style="font-size:0.85rem;color:var(--muted)">A safe, hygienic environment always</p></div>
+        </div>
+        <div class="value-card animate-up">
+          <div class="value-icon">🎨</div>
+          <div><h4>Creativity</h4><p style="font-size:0.85rem;color:var(--muted)">Art, music &amp; expression daily</p></div>
+        </div>
+        <div class="value-card animate-up">
+          <div class="value-icon">🙏</div>
+          <div><h4>Indian Values</h4><p style="font-size:0.85rem;color:var(--muted)">Culture &amp; heritage celebrated</p></div>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(135deg,#FFF8E1,#FFF3E0);border-radius:var(--radius);padding:28px;border-left:5px solid var(--orange);" class="animate-up">
+        <h3 style="font-family:var(--font-head);font-weight:800;font-size:1.1rem;margin-bottom:10px;color:var(--orange)">📖 Our History</h3>
+        <p style="color:var(--text);font-size:0.93rem;">Freedom Park Preschool &amp; Nursery was established in <strong>2016</strong> to provide quality early childhood education and daycare in the Wadmukhwadi and Alandi areas of Pune. Since then, we have been a trusted partner for hundreds of families in our community.</p>
+      </div>
+    </div>
+
+    <!-- Right: Vision + Mission + Quick Facts -->
+    <div>
+      <div class="about-info-block animate-up">
+        <p style="opacity:0.7;font-style:italic;font-size:0.85rem;margin-bottom:16px">✨ new beginnings with your child</p>
+        <h3>🔭 Our Vision</h3>
+        <p>To nurture young minds with love and a passion for lifelong learning.</p>
+        <h3 style="margin-top:16px">🎯 Our Mission</h3>
+        <p>Provide joyful, play-based learning that supports social, emotional and cognitive growth for every child.</p>
+      </div>
+
+      <div style="background:var(--card-bg);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);margin-top:24px;" class="animate-up">
+        <h3 style="font-family:var(--font-head);font-weight:800;font-size:1.1rem;margin-bottom:18px">🌟 Quick Facts</h3>
+        <div class="list-pill"><span style="font-size:1.3rem">📅</span><span><strong>Est. 2016</strong> – Serving Wadmukhwadi since 9+ years</span></div>
+        <div class="list-pill"><span style="font-size:1.3rem">⭐</span><span><strong>Rated 4.7</strong> on Justdial by local parents</span></div>
+        <div class="list-pill"><span style="font-size:1.3rem">💖</span><span><strong>Appreciated</strong> for kind, caring staff &amp; welcoming environment</span></div>
+        <div class="list-pill"><span style="font-size:1.3rem">🤝</span><span><strong>Trusted</strong> local preschool with strong parent-centre communication</span></div>
+        <div class="list-pill"><span style="font-size:1.3rem">📜</span><span><strong>Radcliffe School Partner</strong> &amp; MIT-World Peace School Collaboration</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAMS OVERVIEW ===== -->
+<section class="section animate-up">
+  <div class="divider"></div>
+  <h2 class="section-title">Programs <span>We Offer</span></h2>
+  <p class="section-sub">Two carefully structured programmes designed for every stage</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:860px;margin:0 auto;" class="about-grid">
+
+    <div style="background:linear-gradient(135deg,var(--sky),var(--purple));border-radius:var(--radius-xl);padding:36px;color:#fff;" class="animate-up">
+      <div style="font-size:2.5rem;margin-bottom:12px">🎒</div>
+      <h3 style="font-family:var(--font-head);font-weight:800;font-size:1.3rem;margin-bottom:8px">Preschool Program</h3>
+      <p style="opacity:0.85;font-size:0.88rem;margin-bottom:16px">Playgroup, Nursery, Junior KG &amp; Senior KG</p>
+      <div style="background:rgba(255,255,255,0.15);border-radius:var(--radius-sm);padding:12px 16px;margin-bottom:10px;font-size:0.9rem;">
+        👶 <strong>Ages:</strong> 2 years and above
+      </div>
+      <div style="background:rgba(255,255,255,0.15);border-radius:var(--radius-sm);padding:12px 16px;margin-bottom:16px;font-size:0.9rem;">
+        ⏰ <strong>Hours:</strong> Monday – Friday | 9:00 AM – 1:00 PM
+      </div>
+      <p style="opacity:0.9;font-size:0.88rem;line-height:1.7">A playful and engaging preschool curriculum focused on early language, motor, and social skills through activities, music, stories, and creative play.</p>
+      <a href="programs.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:18px;background:rgba(255,255,255,0.2);color:#fff;padding:9px 20px;border-radius:50px;font-family:var(--font-head);font-weight:700;font-size:0.85rem;text-decoration:none;">View Programs →</a>
+    </div>
+
+    <div style="background:linear-gradient(135deg,var(--orange),var(--yellow));border-radius:var(--radius-xl);padding:36px;color:#fff;" class="animate-up">
+      <div style="font-size:2.5rem;margin-bottom:12px">🏠</div>
+      <h3 style="font-family:var(--font-head);font-weight:800;font-size:1.3rem;margin-bottom:8px">Daycare Program</h3>
+      <p style="opacity:0.85;font-size:0.88rem;margin-bottom:16px">Full-day supervised care in a nurturing environment</p>
+      <div style="background:rgba(255,255,255,0.2);border-radius:var(--radius-sm);padding:12px 16px;margin-bottom:10px;font-size:0.9rem;">
+        👶 <strong>Ages:</strong> 1.5 to 6 years
+      </div>
+      <div style="background:rgba(255,255,255,0.2);border-radius:var(--radius-sm);padding:12px 16px;margin-bottom:16px;font-size:0.9rem;">
+        ⏰ <strong>Hours:</strong> Monday – Saturday | 9:00 AM – 6:00 PM
+      </div>
+      <p style="opacity:0.9;font-size:0.88rem;line-height:1.7">Comprehensive full-day care with structured play, nap times, supervised activities, and nurturing support for young children.</p>
+      <a href="programs.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:18px;background:rgba(255,255,255,0.25);color:#fff;padding:9px 20px;border-radius:50px;font-family:var(--font-head);font-weight:700;font-size:0.85rem;text-decoration:none;">View Programs →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FACILITIES ===== -->
+<section class="section section-alt animate-up">
+  <div class="divider"></div>
+  <h2 class="section-title">Our <span>Facilities</span></h2>
+  <p class="section-sub">A space designed with your child's comfort and safety in mind</p>
+
+  <!-- Row 1 -->
+  <div class="info-cols" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
+    <div class="info-card animate-up" style="flex:1;min-width:250px;max-width:300px;text-align:center;">
+      <img src="images/classroom1.jpeg" alt="Bright Classrooms" style="width:100%;border-radius:var(--radius);margin-bottom:10px;">
+      <h4>Bright Classrooms</h4>
+      <p style="color:var(--muted);font-size:0.88rem">Child-friendly, colourful classrooms designed to spark curiosity and joy</p>
+    </div>
+    <div class="info-card animate-up" style="flex:1;min-width:250px;max-width:00px;text-align:center;">
+      <img src="images/Screenshot 2026-03-27 200111.png" alt="Indoor Activity Area" style="width:100%;border-radius:var(--radius);margin-bottom:10px;">
+      <h4>Indoor Activity Area</h4>
+      <p style="color:var(--muted);font-size:0.88rem">Dedicated space for creative play, craft, music and group activities</p>
+    </div>
+    <div class="info-card animate-up" style="flex:1;min-width:250px;max-width:300px;text-align:center;">
+      <img src="images/Screenshot 2026-03-27 195918.png" alt="Outdoor Playground" style="width:100%;border-radius:var(--radius);margin-bottom:10px;">
+      <h4>Safe Outdoor Playground</h4>
+      <p style="color:var(--muted);font-size:0.88rem">Secure, supervised outdoor area for physical play and exploration</p>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="info-cols" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:24px;">
+    <div class="info-card animate-up" style="flex:1;min-width:250px;max-width:300px;text-align:center;">
+      <img src="images/Screenshot 2026-03-27 200356.png" alt="CCTV Surveillance" style="width:100%;border-radius:var(--radius);margin-bottom:10px;">
+      <h4>CCTV Surveillance</h4>
+      <p style="color:var(--muted);font-size:0.88rem">24/7 camera monitoring across all areas for child and parent peace of mind</p>
+    </div>
+    <div class="info-card animate-up" style="flex:1;min-width:250px;max-width:300px;text-align:center;">
+      <img src="images/Screenshot 2026-03-27 200608.png" alt="First Aid Facility" style="width:100%;border-radius:var(--radius);margin-bottom:10px;">
+      <h4>First-Aid Facility</h4>
+      <p style="color:var(--muted);font-size:0.88rem">On-site first-aid kit and trained staff for immediate care when needed</p>
+    </div>
+    <div class="info-card animate-up" style="flex:1;min-width:250px;max-width:300px;text-align:center;">
+     
+      <h4>Transport Facility</h4>
+      <p style="color:var(--muted);font-size:0.88rem">Safe and reliable transport available for enrolled children</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPORTS & PHYSICAL ACTIVITIES ===== -->
+<section class="section animate-up">
+  <div class="divider"></div>
+  <h2 class="section-title">Sports &amp; <span>Physical Activities</span></h2>
+  <p class="section-sub">Building healthy bodies and confident minds through movement</p>
+  <div class="info-cols">
+    <div class="info-card animate-up" style="border-top:4px solid var(--pink)">
+      <div style="font-size:2rem">💃</div>
+      <h4>Kathak Classes</h4>
+      <p style="color:var(--muted);font-size:0.88rem">For girls aged 2.5 years and above — classical dance building grace, rhythm and cultural connection</p>
+    </div>
+    <div class="info-card animate-up" style="border-top:4px solid var(--orange)">
+      <div style="font-size:2rem">🥋</div>
+      <h4>Karate Classes</h4>
+      <p style="color:var(--muted);font-size:0.88rem">For both girls and boys — developing discipline, focus, confidence and self-defence</p>
+    </div>
+    <div class="info-card animate-up" style="border-top:4px solid var(--green)">
+      <div style="font-size:2rem">🏃</div>
+      <h4>Free Play</h4>
+      <p style="color:var(--muted);font-size:0.88rem">Unstructured outdoor play that builds imagination, social skills and physical fitness</p>
+    </div>
+    <div class="info-card animate-up" style="border-top:4px solid var(--sky)">
+      <div style="font-size:2rem">🎵</div>
+      <h4>Music &amp; Movement</h4>
+      <p style="color:var(--muted);font-size:0.88rem">Rhythm, songs and movement activities that develop coordination and creativity</p>
+    </div>
+    <div class="info-card animate-up" style="border-top:4px solid var(--purple)">
+      <div style="font-size:2rem">🤸</div>
+      <h4>Balancing &amp; Coordination</h4>
+      <p style="color:var(--muted);font-size:0.88rem">Structured activities that develop motor skills, balance and body awareness</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ===== AFFILIATION ===== -->
+<section class="section section-alt animate-up">
+  <div class="divider"></div>
+  <h2 class="section-title">Affiliation &amp; <span>Accreditation</span></h2>
+  <p class="section-sub">Our commitment to recognised early childhood education standards</p>
+  <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:20px;">
+    <div style="background:var(--card-bg);border-radius:var(--radius);padding:28px 32px;box-shadow:var(--shadow-sm);border-left:5px solid var(--sky);" class="animate-up">
+      <h4 style="font-family:var(--font-head);font-weight:800;font-size:1rem;margin-bottom:10px;color:var(--sky)">🏛️ Independent Early Childhood Centre</h4>
+      <p style="color:var(--muted);font-size:0.92rem;line-height:1.75">Freedom Park Preschool &amp; Nursery operates as an independent early childhood education and daycare center. It follows age-appropriate early learning practices designed to develop foundational skills and confidence in young children. While specific external board accreditation is not listed publicly, the programs align with recognised early childhood educational standards.</p>
+    </div>
+    <div style="background:var(--card-bg);border-radius:var(--radius);padding:28px 32px;box-shadow:var(--shadow-sm);border-left:5px solid var(--orange);" class="animate-up">
+      <h4 style="font-family:var(--font-head);font-weight:800;font-size:1rem;margin-bottom:10px;color:var(--orange)">🤝 School Partnerships</h4>
+      <p style="color:var(--muted);font-size:0.92rem;line-height:1.75">Freedom Park is recognised as an <strong>Official Preschool Partner of Radcliffe School</strong> and holds a <strong>Certificate of Collaboration with MIT-World Peace School, Alandi</strong> — a testament to our commitment to quality education and community partnerships.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT QUICK ===== -->
+<section style="background:linear-gradient(135deg,var(--sky),var(--purple));padding:60px 5%;text-align:center;" class="animate-up">
+  <h2 style="font-family:var(--font-head);font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:#fff;margin-bottom:12px">Visit Us Today 📍</h2>
+  <p style="color:rgba(255,255,255,0.9);font-size:1rem;margin-bottom:8px">Padmavatinagari, Wadmukhwadi, Behind KK Care Hospital, Alandi Road, Pune – 412105</p>
+  <p style="color:rgba(255,255,255,0.9);font-size:1rem;margin-bottom:28px">
+    📞 <a href="tel:9356860684" style="color:#fff;font-weight:700">9356860684</a> &nbsp;/&nbsp;
+    <a href="tel:9922208778" style="color:#fff;font-weight:700">9922208778</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+    ✉️ <a href="mailto:freedomparkpreschool2016@gmail.com" style="color:#fff;font-weight:700">freedomparkpreschool2016@gmail.com</a>
+  </p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="admissions.html" class="btn" style="background:#fff;color:var(--sky);">🎒 Apply Now</a>
+    <a href="contact.html" class="btn" style="background:transparent;border:2.5px solid #fff;color:#fff;">📞 Contact Us</a>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

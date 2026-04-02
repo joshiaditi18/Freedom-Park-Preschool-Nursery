@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notice Section – Freedom Park Preschool & Nursery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .notice-grid { max-width: 900px; margin: 0 auto; }
+    .notice-card {
+      background: var(--card-bg);
+      border-left: 6px solid var(--orange);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 32px;
+      align-items: start;
+    }
+    .notice-main { }
+    .notice-img-large {
+  width: 100%;
+  height: auto;          /* keeps aspect ratio */
+  object-fit: contain;   /* shows full image */
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  display: block;
+  margin: 0 auto;
+  max-height: 600px;     /* ✅ increase from 400px to 600px */
+}
+
+    .notice-img-large {
+  width: 100%;
+  height: auto;              /* ✅ allows full image visibility */
+  object-fit: contain;       /* ✅ ensures the whole image fits without cropping */
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  display: block;
+  margin: 0 auto;            /* ✅ centers the image */
+  max-height: 400px;         /* optional: prevents it from getting too tall */
+}
+    .notice-date {
+      background: linear-gradient(135deg, var(--sky), var(--purple));
+      color: var(--white);
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    .notice-title {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--orange);
+      margin-bottom: 12px;
+    }
+   @media (max-width: 768px) {
+  .notice-img-large {
+    max-height: 300px;       /* ✅ keeps mobile layout balanced */
+  }
+}
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div id="notice-placeholder"></div>
+
+<div class="page-header" style="background: linear-gradient(135deg, var(--orange), var(--yellow));">
+  <h1>Notice section</h1>
+  <p>Fun-filled learning adventures for all children!</p>
+  <div class="breadcrumb"><a href="index.html">Home</a> › <a href="notices.html">Notices</a> › Summer Camp</div>
+</div>
+
+<section class="section">
+  <div class="notice-grid">
+    
+    <!-- Summer Camp Notice - Full Featured -->
+    <article class="notice-card animate-up">
+      <div class="notice-main">
+        <div class="notice-date">📣 Registrations Open Now!</div>
+        <h2 class="notice-title">Summer Camp Excitement Awaits! 🌞</h2>
+        <p><strong>Dear Parents,</strong></p>
+        <p>Our annual <strong>Summer Camp</strong> is here! Open to <em>all children</em> aged 2-8 years for 2 joyful batches of fun learning!</p>
+        <ul style="color: var(--text); font-size: 1rem; margin: 20px 0;">
+          <li>🎨 <strong>Fees:</strong> ₹1600 per batch | Both batches: ₹3000 (₹200 discount!)</li>
+          <li>⏰ <strong>Timing:</strong> 9:00 AM – 11:30 AM</li>
+          <li>📅 <strong>Dates:</strong> Batch 1: June 1-15 | Batch 2: June 16-30</li>
+          <li>🎯 <strong>Activities:</strong> Art & Craft, Games, Stories, Dance, Nature Play, Fun Learning</li>
+        </ul>
+        <p style="background: linear-gradient(135deg, var(--sky), var(--purple)); color: var(--white); padding: 16px; border-radius: var(--radius); margin: 20px 0;">
+          <strong>🏃‍♂️ Limited Seats! First come, first served.</strong><br>
+          Contact: 9356860684 / 9922208778
+        </p>
+        <p><em>Share the joy! Help us spread the word 😊 — Freedom Park Team</em></p>
+      </div>
+      <img src="images/SummerCamp.jpeg" alt="Summer Camp Activities at Freedom Park Preschool" class="notice-img-large">
+    </article>
+
+    <!-- Admissions Notice - Full Featured -->
+<article class="notice-card animate-up">
+  <div class="notice-main">
+    <div class="notice-date">📢 Admissions Open 2026–27</div>
+    <h2 class="notice-title">Enroll Now for a Bright Future ✨</h2>
+    <p><strong>Dear Parents, Warm Greetings! 🌸</strong></p>
+    <p>We are delighted to announce that <strong>Admissions</strong> for the academic year <em>2026–27</em> are now open at Freedom Park Preschool & Nursery.</p>
+    <ul style="color: var(--text); font-size: 1rem; margin: 20px 0;">
+      <li>👶 <strong>Age Group:</strong> 2 – 8 years</li>
+      <li>📚 <strong>Programs:</strong> Playgroup, Nursery, Jr. KG, Sr. KG</li>
+      <li>🏫 <strong>Facilities:</strong> Safe campus, creative classrooms, activity-based learning</li>
+      <li>🌱 <strong>Focus:</strong> Holistic development through play, stories, art, and nature</li>
+    </ul>
+    <p style="background: linear-gradient(135deg, var(--sky), var(--purple)); color: var(--white); padding: 16px; border-radius: var(--radius); margin: 20px 0;">
+      <strong>📞 Contact us today to secure your child’s seat!</strong><br>
+      Call: 9356860684 / 9922208778
+    </p>
+    <p><em>We look forward to welcoming your little ones 💖 — Freedom Park Team</em></p>
+  </div>
+  <img src="images/Screenshot 2026-03-29 142215.png" alt="Admissions Open 2026–27 at Freedom Park Preschool" class="notice-img-large">
+  
+</article>
+
+
+  </div>
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="contact.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 16px 40px;">🎒 Register Now →</a>
+    <p style="color: var(--muted); font-style: italic; margin-top: 20px;">Questions? Call us or visit Admissions page</p>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
